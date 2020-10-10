@@ -1,0 +1,27 @@
+{
+  "name": "deninho-bot",
+  "version": "1.0.0",
+  "description": "Bot para twitch",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KastroWalker/deninho-bot.git"
+  },
+  "keywords": [
+    "bot",
+    "twitch",
+    "chatbot"
+  ],
+  "author": "deninhos fans",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KastroWalker/deninho-bot/issues"
+  },
+  "homepage": "https://github.com/KastroWalker/deninho-bot#readme",
+  "dependencies": {
+    "tmi.js": "^1.5.0"
+  }
+}
