@@ -1,0 +1,14 @@
+name: CI
+
+on: push
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+
+      - name: Run eslint
+        run: yarn lint
