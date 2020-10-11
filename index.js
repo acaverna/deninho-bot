@@ -75,7 +75,7 @@ function onMessage(target, context, message, isBot) {
     const randomBan = Math.floor(Math.random() * 10000);
     const msgRandom = Math.floor(Math.random() * 5) + 1;
     const alvoBan = String(mensagem).split(' ');
-    if (alvoBan[1] == undefined) {
+    if (alvoBan[1] === undefined) {
       client.say(
         target,
         `Para usar corretamente este comando digite !ban e ao lado o nick da pessoa que vc quer banir! SeemsGood`,
