@@ -8,7 +8,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Install modules
-        run: yarn
+        run: npm ci
 
       - name: Run eslint
-        run: yarn lint
+        run: npm run lint
