@@ -39,15 +39,15 @@ function message(target, context, message, isBot) {
         init = false;
     }
 
-    const commandName = message.trim();
+    const mensagem = message.trim();
 
-    if (commandName == '!helloworld') {
+    if (mensagem == '!helloworld') {
         const index = Math.floor((Math.random() * helloWorlds.length));
 
         client.say(target, `/me Aqui está seu hello world @${context.username}: ${helloWorlds[index]}`);
     }
 
-    if (commandName == '!duelo'){
+    if (mensagem == '!duelo'){
         if (duelPlayers.length > 0) {
             duelPlayers.push(context.username)
             const winner = Math.floor(Math.random() * duelPlayers.length)
@@ -58,8 +58,8 @@ function message(target, context, message, isBot) {
             client.say(target, `/me Esperando um desafiante <> Expecting a challenger`)
         }
     }
-    
-    if (String(commandName).includes("!ban")) {
+
+    if (String(mensagem).includes("!ban")) {
         let msgRandom = Math.floor(Math.random() * 5) + 1;
         let alvoBan = String(mensagem).split(" ");
         if (alvoBan[1] == undefined) {
