@@ -24,7 +24,8 @@ const helloWorlds = [
   `BEGIN {print "Hello World!"}`,
   `:echo "Hello World!"`,
   `System.out.println("Hello World!");`,
-  `<?php  echo 'Hello World!';`
+  `<?php  echo 'Hello World!';`, 
+  `+[-[<<[+[--->]-[<<<]]]>>>-]>-.---.>..>.<<<<-.<+.>>>>>.>.<<.<-.`
 ];
 
 let duelPlayers = []
