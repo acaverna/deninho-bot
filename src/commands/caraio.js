@@ -1,7 +1,9 @@
+const COMMAND = '!caraio';
+
 let qtdCaraio = 0;
 
 exports.default = (client, target, context, message) => {
-  if (message === '!caraio') {
+  if (message === COMMAND) {
     // eslint-disable-next-line no-plusplus
     qtdCaraio++;
     client.say(

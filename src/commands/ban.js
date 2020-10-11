@@ -1,7 +1,7 @@
-exports.default = (client, target, context, message) => {
-  console.log(target);
+const COMMAND = '!ban';
 
-  if (String(message).startsWith('!ban')) {
+exports.default = (client, target, context, message) => {
+  if (String(message).startsWith(COMMAND)) {
     const randomBan = Math.floor(Math.random() * 10000);
     const msgRandom = Math.floor(Math.random() * 5) + 1;
 

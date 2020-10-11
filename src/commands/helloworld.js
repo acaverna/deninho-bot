@@ -1,3 +1,5 @@
+const COMMAND = '!helloworld';
+
 const HELLO_WORLDS = [
   `console.log('Hello World!');`,
   `print('Hello World!')`,
@@ -11,7 +13,7 @@ const HELLO_WORLDS = [
 ];
 
 exports.default = (client, target, context, message) => {
-  if (message === '!helloworld') {
+  if (message === COMMAND) {
     const index = Math.floor(Math.random() * HELLO_WORLDS.length);
 
     client.say(

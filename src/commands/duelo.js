@@ -1,7 +1,8 @@
+const COMMAND = '!duelo';
 let duelPlayers = [];
 
 exports.default = (client, target, context, message) => {
-  if (message === '!duelo') {
+  if (message === COMMAND) {
     if (duelPlayers.length > 0) {
       duelPlayers.push(context.username);
       const winner = Math.floor(Math.random() * duelPlayers.length);
