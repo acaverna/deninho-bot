@@ -38,7 +38,7 @@ function message(target, context, message, isBot) {
         client.say(target, "/me Deninhobot tá on");
         init = false;
     }
-
+    const msgBan = message
     const mensagem = message.trim();
 
     if (mensagem == '!helloworld') {
@@ -59,7 +59,7 @@ function message(target, context, message, isBot) {
         }
     }
 
-    if (String(mensagem).includes("!ban")) {
+    if (String(msgBan).startsWith("!ban")) {
         let msgRandom = Math.floor(Math.random() * 5) + 1;
         let alvoBan = String(mensagem).split(" ");
         if (alvoBan[1] == undefined) {
