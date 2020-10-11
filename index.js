@@ -46,7 +46,7 @@ function message(target, context, message, isBot) {
         client.say(target, `/me Aqui está seu hello world @${context.username}: ${helloWorlds[index]}`);
     }
 
-    if (commandName == '!duel'){
+    if (commandName == '!duelo'){
         if(duelPlayer >= 1){
             duelPlayers.push(context.username)
             const winner = Math.floor(Math.random() * duelPlayers.length)
