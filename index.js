@@ -27,7 +27,7 @@ const helloWorlds = [
     `<?php  echo 'Hello World!';`
 ];
 
-const duelPlayers = []
+let duelPlayers = []
 
 function message(target, context, message, isBot) {
     if (isBot) {
