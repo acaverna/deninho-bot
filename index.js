@@ -1,8 +1,8 @@
 const tmi = require('tmi.js');
 
-const BOT_NAME = process.env.BOT_NAME ?? 'deninhobot';
-const CHANEL_NAME = process.env.CHANNEL_NAME ?? 'pachicodes';
-const TOKEN = process.env.TOKEN ?? '';
+const BOT_NAME = process.env.BOT_NAME || 'deninhobot';
+const CHANEL_NAME = process.env.CHANNEL_NAME || 'pachicodes';
+const TOKEN = process.env.TOKEN || '';
 
 const opts = {
     identity: {
