@@ -64,39 +64,39 @@ function message(target, context, message, isBot) {
         let alvoBan = String(mensagem).split(" ");
         if (alvoBan[1] == undefined) {
           client.say(
-            alvo,
+            target,
             `Para usar corretamente este comando digite !ban e ao lado o nick da pessoa que vc quer banir! SeemsGood`
           );
         } else {
           switch (msgRandom) {
             case 1:
               client.say(
-                alvo,
-                `${alvoBan[1]} foi banido por falar que php é ruim Kappa`
+                target,
+                `/me ${alvoBan[1]} foi banido por falar que php é ruim Kappa`
               );
               break;
             case 2:
               client.say(
-                alvo,
-                `${alvoBan[1]} foi banido por não ter feito bootcamp de 2dias de js >( `
+                target,
+                `/me ${alvoBan[1]} foi banido por não ter feito bootcamp de 2dias de js >( `
               );
               break;
             case 3:
-              client.say(alvo, `${alvoBan[1]} foi banido por usar windows LUL`);
+              client.say(target, `/me ${alvoBan[1]} foi banido por usar windows LUL`);
               break;
             case 4:
-              client.say(alvo, `${alvoBan[1]} foi banido por usar js Kappa`);
+              client.say(target, `/me ${alvoBan[1]} foi banido por usar js Kappa`);
               break;
             case 5:
               client.say(
-                alvo,
-                `${alvoBan[1]} foi banido por não deixar no lurk...`
+                target,
+                `/me ${alvoBan[1]} foi banido por não deixar no lurk...`
               );
               break;
             default:
               client.say(
-                alvo,
-                `${alvoBan[1]} foi banido por falar que java é bom Kappa`
+                target,
+                `/me ${alvoBan[1]} foi banido por falar que java é bom Kappa`
               );
           }
         }
