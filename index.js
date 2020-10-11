@@ -23,7 +23,8 @@ const helloWorlds = [
     `echo 'Hello World!';`,
     `BEGIN {print "Hello World!"}`,
     `:echo "Hello World!"`,
-    `System.out.println("Hello World!");`
+    `System.out.println("Hello World!");`,
+    `<?php  echo 'Hello World!';`
 ];
 
 function message(target, context, message, isBot) {
