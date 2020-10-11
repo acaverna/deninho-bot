@@ -26,6 +26,8 @@ const helloWorlds = [
     `System.out.println("Hello World!");`
 ];
 
+var duelPlayers = []
+
 function message(target, context, message, isBot) {
     if (isBot) {
         return;
@@ -42,6 +44,16 @@ function message(target, context, message, isBot) {
         const index = Math.floor((Math.random() * helloWorlds.length));
 
         client.say(target, `/me Aqui está seu hello world @${context.username}: ${helloWorlds[index]}`);
+    }
+
+    if (commandName == '!duel'){
+        if(duelPlayer >= 1){
+            duelPlayers.push(context.username)
+            const winner = Math.floor(Math.random() * duelPlayers.length)
+            client.say(target, `/me O vencedor é @${duelPlayers[winner]} <> The winner is @${duelPlayers[winner]}`)
+        }
+        duelPlayers.push(context.username)
+        client.say(target, `/me Esperando um desafiante <> Expecting a challenger`)
     }
 }
 
