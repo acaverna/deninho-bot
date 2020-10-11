@@ -18,7 +18,7 @@ BOT_NAME=dininhobot         # nome de usuário da sua conta.
 CHANEL_NAME=pachicodes      # canal que irá escutar pelos comandos.
 TOKEN=                      # token de acesso obtido anteriormente.
 
-node index.js
+npm run dev
 
     Bot is running at irc-ws.chat.twitch.tv:80
 ```
@@ -27,6 +27,23 @@ node index.js
 
 - Crie uma branch a partir da `main`, exemplo: `git checkout -b minha-branch`.
 - Faça o commit das suas alterações e envie um novo pull request tendo a branch `main` como destino.
+
+## Criando novos comandos
+
+Para criar um novo comando, você deve criar um novo arquivo Javascript dentro do diretório `src/commands` e exportar uma
+função _default_ contendos os parametros seguintes:
+
+```js
+/**
+ * @param client: é o cliente do bot, utilizado principalmente para enviar mensagens de volta a quem solicitou.
+ * @param target: nome do usuário que disparou o comando (que enviou a mensagem), ex: #pachicodes.
+ * @param context: contexto (esse objeto contém várias informações que podem ser utilizados para tomar uma ação, ver melhor na documentção do TMI.js).
+ * @param message: o conteúdo mensagem enviada.
+ */
+exports.default = (client, target, context, message) => {
+  // Conteúdo do seu comando :)
+};
+```
 
 [1]: https://www.twitch.tv/pachicodes
 [2]: https://nodejs.org/en/download/
