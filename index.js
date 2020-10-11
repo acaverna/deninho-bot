@@ -1,8 +1,8 @@
 const tmi = require('tmi.js');
 
-const BOT_NAME = 'deninhobot';
-const CHANEL_NAME = 'pachicodes';
-const TOKEN = '';
+const BOT_NAME = process.env.BOT_NAME ?? 'deninhobot';
+const CHANEL_NAME = process.env.CHANNEL_NAME ?? 'pachicodes';
+const TOKEN = process.env.TOKEN ?? '';
 
 const opts = {
     identity: {
@@ -27,7 +27,7 @@ const helloWorlds = [
     `<?php  echo 'Hello World!';`
 ];
 
-var duelPlayers = []
+const duelPlayers = []
 
 function message(target, context, message, isBot) {
     if (isBot) {
@@ -48,7 +48,7 @@ function message(target, context, message, isBot) {
     }
 
     if (commandName == '!duelo'){
-        if(duelPlayer >= 1){
+        if (duelPlayers.length > 0) {
             duelPlayers.push(context.username)
             const winner = Math.floor(Math.random() * duelPlayers.length)
             client.say(target, `/me O vencedor é @${duelPlayers[winner]} <> The winner is @${duelPlayers[winner]}`)
