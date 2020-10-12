@@ -23,6 +23,16 @@ node index.js
     Bot is running at irc-ws.chat.twitch.tv:80
 ```
 
+# Docker
+Você pode executar o **DeninhoBot** usando Docker e Docker Compose, para isso, siga os passos abaixo:
+1. Faça o clone do projeto.
+2. Configure as variáveis de ambiente.
+3. No diretório raiz do projeto, digite `docker-compose up -d`. Isso vai fazer com que o Docker faça o build do container e coloque em background.
+
+### Comandos úteis do docker-compose
+- Se quiser ver os logs, no diretório raiz do projeto digite `docker-compose logs -f`
+- Se quiser parar o bot, digite `docker-compose down`
+
 # Contribuindo
 
 - Crie uma branch a partir da `main`, exemplo: `git checkout -b minha-branch`.
