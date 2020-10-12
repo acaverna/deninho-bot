@@ -12,7 +12,7 @@ RUN chown -R app:app $HOME/*
 
 USER app
 WORKDIR $HOME/library
-RUN npm install --silent --progress=false --cache /tmp/empty-cache
+RUN npm ci --silent --progress=false --cache /tmp/empty-cache
 
 USER root
 COPY . $HOME/library
