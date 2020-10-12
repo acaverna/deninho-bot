@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  server:
+    container_name: DeninhoBotContainer
+    build: '.'
+    volumes:
+      - .:/home/app/library
+      - /home/app/library/node_modules
+    environment:
+      NODE_ENV: development
+    ports:
+      - '9000:9000'
+    networks:
+      - intranet
+
+networks:
+  intranet:
