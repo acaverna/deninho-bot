@@ -2,8 +2,8 @@
   "name": "deninho-bot",
   "version": "1.0.0",
   "description": "Bot para twitch",
-  "main": "index.js",
   "scripts": {
+    "dev": "node src/index.js",
     "lint": "eslint ."
   },
   "repository": {
