@@ -7,7 +7,7 @@ ENV NODE_ENV="development"
 
 ENV HOME=/home/app
 
-COPY package.json $HOME/library/
+COPY package.json package-lock.json $HOME/library/
 RUN chown -R app:app $HOME/*
 
 USER app
