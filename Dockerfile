@@ -21,4 +21,4 @@ USER app
 
 EXPOSE 9000
 
-CMD nodemon -L --watch . index.js
+CMD nodemon -L --watch . ./src/index.js
