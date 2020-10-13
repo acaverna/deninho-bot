@@ -30,6 +30,7 @@ Você pode executar o **DeninhoBot** usando Docker e Docker Compose, para isso, 
 3. No diretório raiz do projeto, digite `docker-compose up -d`. Isso vai fazer com que o Docker faça o build do container e coloque em background.
 
 ### Comandos úteis do docker-compose
+- Se fizer mudanças no Dockerfile, execute `docker-compose build` antes do `docker-composer up -d`
 - Se quiser ver os logs, no diretório raiz do projeto digite `docker-compose logs -f`
 - Se quiser parar o bot, digite `docker-compose down`
 
