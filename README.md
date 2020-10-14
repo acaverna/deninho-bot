@@ -4,7 +4,7 @@ Repositório contendo o código do bot em execução no canal [@pachicodes][1].
 
 # Executando
 
-Para executar este projeto, você precisa do [NodeJS][2] instalado e um token de acesso para uma conta existente na Twitch. Pode-se utilizar usa própria conta para testes, mas o ideal é ter uma exclusiva para o bot.
+Para executar este projeto, você precisa do [NodeJS][2] instalado e um token de acesso para uma conta existente na Twitch. Pode-se utilizar sua própria conta para testes, mas o ideal é ter uma exclusiva para o bot.
 
 Para obter o token, entre [neste serviço][3] e autorize-o a ter acesso a sua conta da Twitch. Guarde o token obtido em um local seguro. Com o token em mãos: clone este repositório, instale as dependências, defina as variáveis de ambiente e execute a aplicação:
 
