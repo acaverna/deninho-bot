@@ -15,7 +15,7 @@ exports.default = (client, target, context, message) => {
       duelPlayers.push(context.username);
       client.say(
         target,
-        `/me Esperando um desafiante <> Expecting a challenger`,
+        `/me Esperando um desafiante <> Waiting for a challenger`,
       );
     }
   }
