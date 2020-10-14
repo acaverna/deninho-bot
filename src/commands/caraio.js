@@ -8,7 +8,7 @@ exports.default = (client, target, context, message) => {
     qtdCaraio++;
     client.say(
       target,
-      `/me Paxixa Códigos já falou caraio ${qtdCaraio} vezes nessa live.`,
+      `/me Paxixa Códigos já falou caraio ${qtdCaraio} ${qtdCaraio == 1 ? 'vez' : 'vezes'} nessa live.`,
     );
   }
 };
