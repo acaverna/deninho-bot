@@ -4,7 +4,7 @@ Repositório contendo o código do bot em execução no canal [@pachicodes][1].
 
 # Executando
 
-Para executar este projeto, você precisa do [NodeJS][2] instalado e um token de acesso para uma conta existente na Twitch. Pode-se utilizar usa própria conta para testes, mas o ideal é ter uma exclusiva para o bot.
+Para executar este projeto, você precisa do [NodeJS][2] instalado e um token de acesso para uma conta existente na Twitch. Pode-se utilizar sua própria conta para testes, mas o ideal é ter uma exclusiva para o bot.
 
 Para obter o token, entre [neste serviço][3] e autorize-o a ter acesso a sua conta da Twitch. Guarde o token obtido em um local seguro. Com o token em mãos: clone este repositório, instale as dependências, defina as variáveis de ambiente e execute a aplicação:
 
@@ -30,6 +30,7 @@ Você pode executar o **DeninhoBot** usando Docker e Docker Compose, para isso, 
 3. No diretório raiz do projeto, digite `docker-compose up -d`. Isso vai fazer com que o Docker faça o build do container e coloque em background.
 
 ### Comandos úteis do docker-compose
+- Se fizer mudanças no Dockerfile, execute `docker-compose build` antes do `docker-composer up -d`
 - Se quiser ver os logs, no diretório raiz do projeto digite `docker-compose logs -f`
 - Se quiser parar o bot, digite `docker-compose down`
 
