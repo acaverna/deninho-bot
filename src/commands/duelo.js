@@ -8,14 +8,14 @@ exports.default = (client, target, context, message) => {
       const winner = Math.floor(Math.random() * duelPlayers.length);
       client.say(
         target,
-        `/me O vencedor é @${duelPlayers[winner]} <> The winner is @${duelPlayers[winner]}`,
+        `/me Quem ganhou foi @${duelPlayers[winner]} <> The winner is @${duelPlayers[winner]}`,
       );
       duelPlayers = [];
     } else {
       duelPlayers.push(context.username);
       client.say(
         target,
-        `/me Esperando um desafiante <> Waiting for a challenger`,
+        `/me Esperando alguém para desafiar <> Waiting for a challenger`,
       );
     }
   }
