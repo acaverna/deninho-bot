@@ -4,7 +4,7 @@ const { Client } = require('tmi.js');
 const { readdirSync } = require('fs');
 
 const BOT_NAME = process.env.BOT_NAME || 'deninhobot';
-const CHANEL_NAME = process.env.CHANNEL_NAME || 'pachicodes';
+const CHANNEL_NAME = process.env.CHANNEL_NAME || 'pachicodes';
 const TOKEN = process.env.TOKEN || '';
 
 const opts = {
