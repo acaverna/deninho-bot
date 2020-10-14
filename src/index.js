@@ -12,7 +12,7 @@ const opts = {
     username: BOT_NAME,
     password: TOKEN,
   },
-  channels: [CHANEL_NAME],
+  channels: [CHANNEL_NAME],
 };
 
 const client = new Client(opts);
@@ -29,6 +29,11 @@ readdirSync(`${__dirname}/commands`)
 client.on('connected', (host, port) => {
   // eslint-disable-next-line no-console
   console.log(`Bot is running at ${host}:${port}`);
+  console.log(`Joined channel: ${CHANNEL_NAME}`);
+
+  setTimeout(() => {
+    client.say(CHANNEL_NAME, 'estou online!');
+  }, 2000)
 });
 
 client.connect();
