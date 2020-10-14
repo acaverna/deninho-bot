@@ -29,11 +29,12 @@ readdirSync(`${__dirname}/commands`)
 client.on('connected', (host, port) => {
   // eslint-disable-next-line no-console
   console.log(`Bot is running at ${host}:${port}`);
+  // eslint-disable-next-line no-console
   console.log(`Joined channel: ${CHANNEL_NAME}`);
 
   setTimeout(() => {
     client.say(CHANNEL_NAME, 'estou online!');
-  }, 2000)
+  }, 2000);
 });
 
 client.connect();
