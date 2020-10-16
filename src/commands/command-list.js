@@ -10,5 +10,8 @@ exports.default = (client, target, context, message) => {
         !duel @deninhobot`,
       );
       break;
+
+    default:
+      break;
   }
 };
