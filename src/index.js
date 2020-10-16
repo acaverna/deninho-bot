@@ -33,7 +33,7 @@ client.on('connected', (host, port) => {
   console.log(`Joined channel: ${CHANNEL_NAME}`);
 
   setTimeout(() => {
-    client.say(CHANNEL_NAME, 'estou online!');
+    client.say(CHANNEL_NAME, 'Deninho está on!');
   }, 2000);
 });
 
