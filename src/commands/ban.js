@@ -28,13 +28,13 @@ exports.default = (client, target, context, message) => {
         case 3:
           client.say(
             target,
-            `/me ${context.username} baniu ${alvoBan[1]} por usar windows LUL`,
+            `/me ${context.username} baniu ${alvoBan[1]} por usar Mac LUL`,
           );
           break;
         case 4:
           client.say(
             target,
-            `/me ${context.username} baniu ${alvoBan[1]} por usar js Kappa`,
+            `/me ${context.username} baniu ${alvoBan[1]} por usar java Kappa`,
           );
           break;
         case 5:
