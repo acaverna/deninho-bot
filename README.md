@@ -14,8 +14,8 @@ git clone https://github.com/pachicodes/deninho-bot.git
 cd ./deninho-bot
 npm install
 
-BOT_NAME=dininhobot         # nome de usuário da sua conta.
-CHANEL_NAME=pachicodes      # canal que irá escutar pelos comandos.
+BOT_NAME=deninhobot         # nick do bot na twitch.
+CHANNEL_NAME=pachicodes     # canal que irá escutar pelos comandos.
 TOKEN=                      # token de acesso obtido anteriormente.
 
 npm run dev
