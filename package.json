@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "Bot para twitch",
   "scripts": {
-    "dev": "node src/index.js",
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
     "lint": "eslint ."
   },
   "repository": {
@@ -23,6 +24,7 @@
   "homepage": "https://github.com/KastroWalker/deninho-bot#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6",
     "tmi.js": "^1.5.0"
   },
   "devDependencies": {
