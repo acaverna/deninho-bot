@@ -12,7 +12,7 @@ git clone https://github.com/pachicodes/deninho-bot.git
 cd ./deninho-bot
 npm install
 
-npm run dev
+npm start
 
     Bot is running at irc-ws.chat.twitch.tv:80
 ```
