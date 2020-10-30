@@ -1,5 +1,6 @@
 const COMMANDS_POKE = ['!selva', '!selvagem', '!capturar'];
 const COMMANDS_LEV = ['!calma', '!eita'];
+const COMMANDS_JP = ['!jp', '!brabo'];
 
 exports.default = (client, target, context, message) => {
   let msg = '';
@@ -20,6 +21,9 @@ exports.default = (client, target, context, message) => {
       msg = 'Calma a live certa é essa aqui: twitch.tv/levxyca';
     }
   }
+
+  if (COMMANDS_JP.includes(message))
+    msg = '/me É isso! SeemsGood https://twitch.tv/jpbrab0';
 
   if (msg) {
     client.say(target, msg);
