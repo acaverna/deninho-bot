@@ -5,7 +5,7 @@ exports.default = (client, target, context, message) => {
 
   if (
     (splittedMessage[0] === COMMAND && splittedMessage[1] === 'deninhobot') ||
-    splittedMessage[1] === '@deninhobot'
+    (splittedMessage[0] === COMMAND && splittedMessage[1] === '@deninhobot')
   ) {
     setTimeout(() => {
       client.say(target, '!accept');
