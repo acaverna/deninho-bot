@@ -1,14 +1,15 @@
 const COMMAND = '!amoapachi';
+let messageSplited = [];
 
 exports.default = (client, target, context, message) => {
-  message = message.split(' ');
-  if (message[0] === COMMAND) {
-    if (message.length === 1) {
+  messageSplited = message.split(' ');
+  if (messageSplited[0] === COMMAND) {
+    if (messageSplited.length === 1) {
       client.say(target, `${context.username} ama a Pachi!`);
     }
-    if (message.length === 2) {
-      message[1] = message[1].replace('@', '');
-      client.say(target, `${message[1]} ama a Pachi!`);
+    if (messageSplited.length === 2) {
+      messageSplited[1] = messageSplited[1].replace('@', '');
+      client.say(target, `${messageSplited[1]} ama a Pachi!`);
     }
   }
 };
