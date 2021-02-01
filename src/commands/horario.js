@@ -9,7 +9,7 @@ exports.default = (client, target, context, message) => {
   } else if (message === '!schedule') {
     client.say(
       target,
-      '/me Tuesday and Thursday 08am lives in Portuguese | Monday and Friday 10am lives in English',
+      '/me Tuesday and Thursday 08am ET lives in Portuguese | Monday and Friday 10am ET lives in English',
     );
   }
 };
