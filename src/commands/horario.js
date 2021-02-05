@@ -4,12 +4,12 @@ exports.default = (client, target, context, message) => {
   if (message === COMMAND) {
     client.say(
       target,
-      '/me Terça e Quinta 10hrs lives em Português | Segunda e Sexta 12hrs lives em Inglês',
+      '/me Terça e Quinta 10hrs lives em Português | Segunda 11hrs, Quarta 18:30 e Sexta 16hrs live em inglês',
     );
   } else if (message === '!schedule') {
     client.say(
       target,
-      '/me Tuesday and Thursday 08am ET lives in Portuguese | Monday and Friday 10am ET lives in English',
+      '/me Monday 9am-EST // 6am-PST, Wednesday 4:30pm-EST // 1:30pm-PST and Friday 2pm-EST // 11am-PST lives in English | Tuesday and Thursday 8am-EST // 5am-PST lives in Portuguese',
     );
   }
 };
