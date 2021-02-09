@@ -1,7 +1,5 @@
-const COMMAND = '!horario';
-
 exports.default = (client, target, context, message) => {
-  if (message === COMMAND) {
+  if (message === '!horario') {
     client.say(
       target,
       '/me Terça e Quinta 10hrs lives em Português | Segunda 11hrs, Quarta 18:30 e Sexta 16hrs live em inglês',
