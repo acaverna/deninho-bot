@@ -5,8 +5,6 @@ exports.default = (client, target, context, message) => {
   if (message === COMMAND) {
     if (rt) {
       client.say(target, `/me ${rt}`);
-    } else {
-      client.say(target, '/me não temos mensagem de rt');
     }
   } else if (
     message.split(' ')[0] === '!addrt' &&
