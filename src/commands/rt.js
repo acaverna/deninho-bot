@@ -9,8 +9,8 @@ exports.default = (client, target, context, message) => {
       client.say(target, '/me não temos mensagem de rt');
     }
   } else if (
-    (message.split(' ')[0] === '!addrt' && context.mod) ||
-    context.username === 'pachicodes'
+    message.split(' ')[0] === '!addrt' &&
+    (context.mod || context.username === 'pachicodes')
   ) {
     rt = message.replace('!addrt', '');
     client.say(target, `/me ${rt}`);
