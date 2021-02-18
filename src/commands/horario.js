@@ -2,12 +2,12 @@ exports.default = (client, target, context, message) => {
   if (message === '!horario') {
     client.say(
       target,
-      '/me Terça e Quinta 10hrs lives em Português | Segunda 11hrs, Quarta 18:30 e Sexta 16hrs live em inglês',
+      '/me Terça 10:30hrs e Quinta 17:00hrs lives em Português | Seg, Ter, Qua, Sex 11hrs lives em Inglês',
     );
   } else if (message === '!schedule') {
     client.say(
       target,
-      '/me Monday 9am-EST // 6am-PST, Wednesday 4:30pm-EST // 1:30pm-PST and Friday 2pm-EST // 11am-PST lives in English | Tuesday and Thursday 8am-EST // 5am-PST lives in Portuguese',
+      '/me Mon, Wed, Thu, Fri 9am-EST and Tuesday 3:30pm-EST streams in English lives in English | Tuesday 8:30am-EST and Thursday 3pm-EST streams in Portuguese',
     );
   }
 };
