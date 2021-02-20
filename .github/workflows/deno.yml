@@ -16,21 +16,21 @@ on:
 
 jobs:
   test:
-    runs-on: ${{ matrix.os }} # runs a test on Ubuntu, Windows and macOS
+    runs-on: ${{ matrix.os }} # runs the job on Ubuntu, Windows and macOS
 
     strategy:
       matrix:
-        deno: ["v1.x", "nightly"]
-        os: [macOS-latest, windows-latest, ubuntu-latest]
+        deno: ['v1.x', 'nightly']
+        os: [macos-latest, windows-latest, ubuntu-latest]
 
     steps:
       - name: Setup repo
-        uses: actions/checkout@v2
+        uses: actions/checkout@v2.3.4
 
       - name: Setup Deno
-        uses: denolib/setup-deno@c7d7968ad4a59c159a777f79adddad6872ee8d96
+        uses: denolib/setup-deno@v2.3.0
         with:
-          deno-version: ${{ matrix.deno }} # tests across multiple Deno versions
+          deno-version: ${{ matrix.deno }} # tests across multiple versions of Deno
 
       - name: Cache Dependencies
         run: deno cache deps.ts
