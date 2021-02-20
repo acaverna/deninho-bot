@@ -33,4 +33,4 @@ jobs:
           deno-version: ${{ matrix.deno }} # tests across multiple versions of Deno
 
       - name: Run Lint
-        run: deno lint -A --unstable
+        run: deno lint --unstable
