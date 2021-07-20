@@ -7,7 +7,7 @@ exports.default = (client, target, context, message) => {
   } else if (message === '!schedule') {
     client.say(
       target,
-      '/me Tuesday and Thursday 9:00pm-EST streams in Portuguese | Wednesday and Friday 10:30pm-EST streams in English',
+      '/me Tuesday and Thursday 9:00am-EST streams in Portuguese | Wednesday and Friday 10:30am-EST streams in English',
     );
   }
 };
