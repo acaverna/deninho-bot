@@ -1,4 +1,4 @@
-const COMMAND = '!xion';
+const COMMAND = '!shion';
 
 exports.default = (client, target, context, message) => {
   if (message === COMMAND || message === '!lana') {
